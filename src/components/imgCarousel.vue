@@ -6,16 +6,35 @@
       <label for="slide-dot-3"></label>
     </div>
 
-    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-    <img class="slide-img" src="../assets/img-carousel.png">
+    <div class="slide">
+      <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+      <img class="slide-img" src="../assets/img-carousel.png">
+      <div class="slide-text">
+        <h2>Titre de la diapositive 1</h2>
+        <p>Description de la diapositive 1</p>
+      </div>
+    </div>
 
-    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-    <img class="slide-img" src="../assets/img-carousel.png">
+    <div class="slide">
+      <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+      <img class="slide-img" src="../assets/img-carousel.png">
+      <div class="slide-text">
+        <h2>Titre de la diapositive 2</h2>
+        <p>Description de la diapositive 2</p>
+      </div>
+    </div>
 
-    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-    <img class="slide-img" src="../assets/img-carousel.png">
-
+    <div class="slide">
+      <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+      <img class="slide-img" src="../assets/img-carousel.png">
+      <div class="slide-text">
+        <h2>Titre de la diapositive 3</h2>
+        <p>Description de la diapositive 3</p>
+      </div>
+    </div>
   </div>
+
+
 </template>
 
 <script>
@@ -43,7 +62,7 @@ img {
 .menu {
   position: absolute;
   left: 0;
-  z-index: 11;
+  z-index: 999;
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -65,7 +84,7 @@ img {
 }
 .slide-img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 100%;
@@ -76,6 +95,23 @@ img {
   left: 0;
   z-index: 100;
   transition: left 0.65s ease-out;
+}
+.slide-text{
+  z-index: 999;
+  position:relative;
+}
+.slide-text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.slide-input:checked + .slide-img + .slide-text {
+  display: block;
 }
 
 </style>

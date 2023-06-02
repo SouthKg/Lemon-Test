@@ -58,13 +58,26 @@ button{
 .first button{
   border:white solid 1px;
   color:white;
+  transition:0.6s;
+}
+.first button:hover{
+  color:#212529;
+  background:white;
+  transition:0.6s;
 }
 .second{
-  background:#DEE2E6;
+  background:##F8F9FA;
   margin-left:10px;
+  border-color:#DEE2E6;
 }
 .second button{
   border:#6C757D solid 1px;
   color:#6C757D;
+  transition:0.6s;
+}
+.second button:hover{
+  color:white;
+  background:#6C757D;
+  transition:0.6s;
 }
 </style>

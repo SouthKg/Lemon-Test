@@ -20,6 +20,7 @@
       </div>
     </div>
     <div class="footer-extra">
+      <div class="separator"></div>
       <p>Veolia demo test site | Lemon Interactive © 2022</p>
     </div>
   </footer>
@@ -40,6 +41,7 @@ export default {
   justify-content: space-between;
   flex-wrap: wrap;
   background: #212529;
+  padding:1% 17%;
 }
 
 .footer-column {
@@ -49,11 +51,15 @@ export default {
 
 .footer-column h3 {
   font-size: 18px;
+  color:white;
+  text-align: left;
 }
 
 .footer-column p {
   font-size: 14px;
   line-height: 1.4;
+  color:#6C757D;
+  text-align: left;
 }
 
 .footer-extra {
@@ -63,6 +69,8 @@ export default {
 
 .footer-extra p{
   margin:0;
+  padding-bottom: 20px;
+  color:#6C757D;
 }
 
 .wave-background{
@@ -72,4 +80,12 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.separator {
+  height: 1px;
+  background-color: #6C757D;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom:20px;
+}
+
 </style>

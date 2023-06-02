@@ -1,7 +1,9 @@
 <template>
   <header>
-    <img src="../assets/logo-veolia.png">
-    <input type="text" placeholder="Recherche"><button type="submit"></button>
+    <img class="logo" src="../assets/logo-veolia.png" href="/">
+    <div class="search-bar">
+      <input type="text" placeholder="Recherche"><button type="submit"></button>
+    </div>
 
     <nav>
       <ul>
@@ -29,9 +31,11 @@ export default {
 
 <style scoped>
 header {
-  padding: 20px;
+  padding: 1% 17%;
+
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
@@ -51,15 +55,17 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #6C757D;
+  margin-right: 20px;
 }
 input[type=text] {
   float: right;
   border: none;
   font-size: 17px;
-  height:40px;
+  height:36px;
   border:solid 1px #6C757D;
   width:280px;
+  padding-left:15px;
 }
 button{
   background:#6C757D;
@@ -74,5 +80,14 @@ button{
 .home{
   color:#F01018;
 }
+.logo{
+  cursor: pointer;
+}
 
+.search-bar{
+  display: flex;
+}
+ul img{
+  margin-right:5px;
+}
 </style>
