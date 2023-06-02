@@ -57,4 +57,12 @@ h2{
   margin-left:18%;
   margin-top:50px;
 }
+@media screen and (max-width:1024px){
+  h2{
+    margin-left:20px;
+  }
+  .card-loop {
+    flex-direction: column;
+  }
+}
 </style>

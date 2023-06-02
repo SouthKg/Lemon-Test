@@ -80,4 +80,17 @@ button{
   background:#6C757D;
   transition:0.6s;
 }
+@media screen and (max-width:1024px){
+  .row{
+    flex-direction: column;
+    margin-left:15px;
+    margin-right:15px;
+  }
+  .column{
+    width:72%;
+    margin-right:0px;
+    margin-left:0px;
+    margin-bottom:20px;
+  }
+}
 </style>

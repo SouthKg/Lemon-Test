@@ -32,4 +32,10 @@ export default {
     font-size: 28px;
     line-height: 34px;
   }
+
+  @media screen and (max-width:1024px){
+    h2{
+      font-size:21px;
+    }
+  }
 </style>

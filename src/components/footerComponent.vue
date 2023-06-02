@@ -88,4 +88,24 @@ export default {
   margin-bottom:20px;
 }
 
+@media screen and (max-width:1024px){
+    .footer-columns{
+      flex-direction: column;
+      padding:1% 5%;
+    }
+  .footer-column{
+    width:100%;
+  }
+  .separator{
+    margin-left:5%;
+    margin-right:5%;
+  }
+  .footer-extra p{
+    margin-left:5%;
+    margin-right:5%;
+  }
+  .wave-background{
+    height:50px;
+  }
+}
 </style>

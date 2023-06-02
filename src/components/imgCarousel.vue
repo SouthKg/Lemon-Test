@@ -70,14 +70,14 @@ img {
 .menu label {
   cursor: pointer;
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  border-radius: 50px;
+  width: 45px;
+  height: 5px;
+  background: #FFFFFF80;
+  border-radius: 0;
   margin: 0 0.2em 1em;
 }
 .menu label:hover,.menu label:focus {
-  background: #1c87c9;
+  background: white;
 }
 .slide-input{
   opacity: 0;
@@ -103,7 +103,7 @@ img {
 .slide-text {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -112,6 +112,15 @@ img {
 
 .slide-input:checked + .slide-img + .slide-text {
   display: block;
+}
+
+@media screen and (max-width:1024px){
+  .slider-container[data-v-c9bcd23a] {
+    height: 145px;
+  }
+  .slide-text{
+    display:none !important;
+  }
 }
 
 </style>

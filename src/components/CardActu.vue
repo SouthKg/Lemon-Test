@@ -72,4 +72,10 @@ img.calendar-img{
   font-size:16px;
   margin-top:5px;
 }
+@media screen and (max-width:1024px){
+  .card-actu{
+    width:92%;
+    margin-bottom:20px;
+  }
+}
 </style>
