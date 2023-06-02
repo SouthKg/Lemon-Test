@@ -16,28 +16,28 @@ export default {
     return {
       cards: [
         {
-          imageSrc: 'image1.jpg',
+          imageSrc: require('../assets/img-article1.png'),
           title: 'Augustum actus eius exaggerando',
           description: 'Nam utilitates quidem etiam ab iis percipiuntur antiquior et pulchrior.',
-          date: '2022-01-01',
+          date: '01/01/2022',
         },
         {
-          imageSrc: 'image2.jpg',
+          imageSrc: require('../assets/img-article2.png'),
           title: 'Thalassius vero ea tempestate',
           description: 'Recipiendisque meritis quod quisque minus ut dandis recipiendisque.',
-          date: '2021-12-17',
+          date: '17/12/2021',
         },
         {
-          imageSrc: 'image2.jpg',
+          imageSrc: require('../assets/img-article3.png'),
           title: 'Vexillum altius erigens posticas',
           description: 'Utrum propter imbecillitatem atque inopiam posticas in regiam.',
-          date: '2021-11-05',
+          date: '05/11/2021',
         },
         {
-          imageSrc: 'image2.jpg',
+          imageSrc: require('../assets/img-article4.png'),
           title: 'Opposita instar rapidi fluminis',
           description: 'Saepissime igitur mihi de amicitia cogitanti maxime fingerent quaedam.',
-          date: '2021-06-24',
+          date: '24/04/2021',
         },
       ],
     };
@@ -47,5 +47,13 @@ export default {
 
 <style scoped>
 .card-loop {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+h2{
+  text-align: left;
+  margin-left:18%;
 }
 </style>

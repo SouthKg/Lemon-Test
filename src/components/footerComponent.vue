@@ -1,5 +1,6 @@
 <template>
   <footer class="footer">
+    <div class="wave-background"></div>
     <div class="footer-columns">
       <div class="footer-column">
         <h3>Comite largitionum</h3>
@@ -32,14 +33,13 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #f0f0f0;
-  padding: 20px;
 }
 
 .footer-columns {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background: #212529;
 }
 
 .footer-column {
@@ -49,7 +49,6 @@ export default {
 
 .footer-column h3 {
   font-size: 18px;
-  margin-bottom: 10px;
 }
 
 .footer-column p {
@@ -58,7 +57,19 @@ export default {
 }
 
 .footer-extra {
-  margin-top: 20px;
   text-align: center;
+  background: #212529;
+}
+
+.footer-extra p{
+  margin:0;
+}
+
+.wave-background{
+  height:150px;
+  background-image: url("../assets/backgroundfooter2.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

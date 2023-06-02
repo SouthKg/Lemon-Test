@@ -7,13 +7,13 @@
     </div>
 
     <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-    <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide1.jpg">
+    <img class="slide-img" src="../assets/img-carousel.png">
 
     <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-    <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">
+    <img class="slide-img" src="../assets/img-carousel.png">
 
     <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-    <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
+    <img class="slide-img" src="../assets/img-carousel.png">
 
   </div>
 </template>
@@ -34,10 +34,10 @@ img {
   max-width: 100%;
 }
 .slider-container {
-  max-width: 800px;
+  width:100%;
   position: relative;
   margin: auto;
-  height: 350px;
+  height: 500px;
   overflow: hidden;
 }
 .menu {
